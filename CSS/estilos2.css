@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 150px 300px 100px;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "menu carrusel publicidad"
+    "pie pie pie";
+    gap: 10px;
+}
+.titulo{
+
+    grid-area: titulo;
+    background-color: lightblue;
+}
+.menu{
+    grid-area: menu;
+    background-color: lightgreen;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.carrusel{
+
+    grid-area: carrusel;
+    background-color: lightyellow;
+
+}
+.publicidad{
+
+    grid-area: publicidad;
+    background-color: lightpink;
+    display:flex;
+    justify-content:center; 
+
+    align-items:center; 
+
+}
+
+
+.publicidad img{
+
+    width:150px;
+
+    height:150px;
+
+    object-fit:cover;
+
+}
+.pie{
+
+    grid-area: pie;
+    background-color: lightgray;
+}
